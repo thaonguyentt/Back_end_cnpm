@@ -1,0 +1,25 @@
+{
+    "name": "hozing-backend/hozing-backend",
+    "type": "project",
+    "config": {
+        "disable-tls": true
+    },
+    "scripts": {
+        "dev": [
+            "Composer\\Config::disableProcessTimeout",
+            "php -S 0.0.0.0:8080"
+        ]
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "require": {
+        "vlucas/phpdotenv": "^5.3",
+        "pecee/simple-router": "4.3.7.2",
+        "firebase/php-jwt": "^5.5",
+        "ext-pdo": "*",
+        "nikic/fast-route": "^1.3"
+    }
+}

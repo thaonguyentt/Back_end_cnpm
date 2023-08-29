@@ -1,0 +1,37 @@
+services:
+
+  api:
+    
+    # image: php:8.2-bullseye
+    build: ./
+    restart: unless-stopped
+    networks:
+      - backend
+    ports:
+      - 8080:8080
+    volumes:
+      - ./:/source
+      # - ./php.ini:/usr/local/etc/php/php.ini
+    working_dir: /source
+    command: php composer dev
+
+
+  mariadb:
+    image: mariadb:11
+    restart: unless-stopped
+    networks: 
+      - backend
+    ports:
+      - 3306:3306
+    environment:
+      MARIADB_ROOT_PASSWORD: hozing
+      MARIADB_DATABASE: hozing
+    volumes:
+      - mariadb-data:/var/lib/mysql
+      - ./initdb/:/docker-entrypoint-initdb.d
+
+networks:
+  backend:
+
+volumes:
+  mariadb-data:

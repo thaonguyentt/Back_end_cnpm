@@ -1,0 +1,423 @@
+{
+	"info": {
+		"_postman_id": "b68ca3c8-b291-4ebb-a679-51c8a48d9adf",
+		"name": "hozing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "authen",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\":\"test\",\n    \"password\":\"test\"\n}"
+				},
+				"url": {
+					"raw": "localhost:9090/authenticate",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"authenticate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all service type",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9090/serviceType/allServiceType",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"serviceType",
+						"allServiceType"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all room for admin",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJob3ppbmciLCJpYXQiOjE2MzgzNjczNDgsImV4cCI6MTYzODk3MjE0OCwiaWQiOiIyIiwidXNlcm5hbWUiOiJ0ZXN0IiwiaXNfYWRtaW4iOmZhbHNlfQ.kP3gKLTagY9kkw90lRIcgEiVACLvBiG2WsoFjQWN6vY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9090/room/allRoom",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"room",
+						"allRoom"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "new service type",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"test\",\n    \"price\":\"300\",\n    \"unit\":\"test\"\n}"
+				},
+				"url": {
+					"raw": "localhost:9090/serviceType",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"serviceType"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit service type id  6",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"test2\",\n    \"price\":\"200\",\n    \"unit\":\"test4\"\n}"
+				},
+				"url": {
+					"raw": "localhost:9090/serviceType/6",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"serviceType",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete service type 6",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:9090/serviceType/6",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"serviceType",
+						"6"
+					]
+				},
+				"description": "từ service type số 7 đổ đi là để test"
+			},
+			"response": []
+		},
+		{
+			"name": "get all feedback",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9090/feedback/allFeedback",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"feedback",
+						"allFeedback"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create new feedback",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\" : \"TH\",\n    \"phone_number\": \"123456789\",\n    \"email\": \"test@gmail.com\",\n    \"note\": \"ajsbfjkasd \"\n}"
+				},
+				"url": {
+					"raw": "localhost:9090/feedback",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"feedback"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "\bedit feeback with id 2",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\" : \"TH\",\n    \"phone_number\": \"123456789\",\n    \"email\": \"test@gmail.com\",\n    \"note\": \"ajsbfjkasdghcjgxjchv \"\n}"
+				},
+				"url": {
+					"raw": "localhost:9090/feedback/2",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"feedback",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete feedback with id 2",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:9090/feedback/2",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"feedback",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all book",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9090/book/allBook",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"book",
+						"allBook"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "book for room 2001",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"room_code\": \"2001\",\n    \"customer_id\": \"2\",\n    \"num_adult\": \"2\",\n    \"num_children\":\"2\",\n    \"check_in\":\"2021-12-01 10:02:00\",\n    \"check_out\":\"2021-12-03 10:02:00\"\n}"
+				},
+				"url": {
+					"raw": "localhost:9090/booking",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"booking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit book have book id 2",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"room_code\": \"2001\",\n    \"customer_id\": \"2\",\n    \"num_adult\": \"4\",\n    \"num_children\":\"4\",\n    \"check_in\":\"2021-12-01 10:02:00\",\n    \"check_out\":\"2021-12-03 10:02:00\"\n}"
+				},
+				"url": {
+					"raw": "localhost:9090/book/2",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"book",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete book have in database",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:9090/book/2",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"book",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "loc room cho list room theo check in check out va num_people",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"check_in\":\"2021-12-01\",\n    \"check_out\": \"2021-12-03\",\n    \"num_people\": \"2\"\n}"
+				},
+				"url": {
+					"raw": "localhost:9090/room/roomCondition",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"room",
+						"roomCondition"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all mapping",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:9090/mapping/allMapping",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"mapping",
+						"allMapping"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create new mapping",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"service_id\": \"3\",\n    \"room_code\" : \"2001\"\n}"
+				},
+				"url": {
+					"raw": "localhost:9090/mapping",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"mapping"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit mapping",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"service_id\": \"2\",\n    \"room_code\" : \"2001\"\n}"
+				},
+				"url": {
+					"raw": "localhost:9090/mapping/33",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"mapping",
+						"33"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete mapping",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:9090/mapping/33",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"mapping",
+						"33"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

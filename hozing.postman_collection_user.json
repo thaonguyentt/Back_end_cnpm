@@ -1,0 +1,188 @@
+{
+	"info": {
+		"_postman_id": "591065bf-e088-45f1-8585-e089370163dd",
+		"name": "hozing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"test5\",\n    \"email\": \"test5@test.vn\",\n    \"first_name\": \"Test\",\n    \"last_name\": \"Test\",\n    \"address\": \"HCM\",\n    \"phone_number\": \"0123456789\",\n    \"password\": \"test\"\n}",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get user 1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9090/user/1",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "authenticate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"test\",\n    \"password\": \"test\"\n}"
+				},
+				"url": {
+					"raw": "localhost:9090/authenticate",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"authenticate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update user",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"a@b.c\",\n    \"first_name\": \"update\",\n    \"last_name\": \"user\",\n    \"address\": \"internet\",\n    \"phone_number\": \"0987654324\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:9090/user/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "auth test",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJob3ppbmciLCJpYXQiOjE2MzgwMzExOTksImV4cCI6MTYzODYzNTk5OSwidXNlcm5hbWUiOiJ0ZXN0IiwiYWRtaW4iOmZhbHNlfQ.ElXn3gjYUmBgfLJLqemnE1vMj0rQJcvMvbOl5YyJ75U",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9090/authtest",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"authtest"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get room",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/room/1001",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"room",
+						"1001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete user",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:9090/user/9999",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"user",
+						"9999"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all booking",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9090/book/allBook",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"book",
+						"allBook"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
