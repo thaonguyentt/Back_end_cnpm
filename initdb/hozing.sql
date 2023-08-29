@@ -16,7 +16,7 @@ CREATE TABLE room (
     room_code int(11) COMMENT 'Ma phong',
     num_people int(2) COMMENT 'so luong nguoi',
    	area decimal(10,2) COMMENT 'dien tich',
-    price decimal(10,2)COMMENT 'tien phong',
+    price decimal(10,0)COMMENT 'tien phong',
     description varchar(10000) COMMENT 'mo ta',
     room_name varchar(50) COMMENT 'ten phong',
     link_image varchar(255) COMMENT 'duong dan hinh anh'
@@ -28,192 +28,192 @@ values
 trải nghiệm xa hoa và tiện nghi cao cấp. 
 Với tầm nhìn trực tiếp ra biển cả xanh biếc, 
 phòng này mang đến không gian thoải mái và sự sang trọng đích thực.'
-,'DOUBLE BED ROOM', 'https://ibb.co/SncBb8c'),
+,'DOUBLE BED ROOM', 'https://i.ibb.co/QNkMLRk/2001.jpg'),
 (1002,2,905,200,'Phòng Deluxe Ocean View là một lựa chọn hoàn hảo cho những ai tìm kiếm 
 trải nghiệm xa hoa và tiện nghi cao cấp. 
 Với tầm nhìn trực tiếp ra biển cả xanh biếc, 
 phòng này mang đến không gian thoải mái và sự sang trọng đích thực.'
-,'FAMILY ROOM', 'https://ibb.co/zrknWzS'),
+,'FAMILY ROOM', 'https://i.ibb.co/Qf5b746/1009.jpg'),
 (1003,2,25,270,'Phòng suite room là một lựa chọn hoàn hảo cho những ai tìm kiếm 
 trải nghiệm xa hoa và tiện nghi cao cấp. 
 Với tầm nhìn trực tiếp ra biển cả xanh biếc, 
 phòng này mang đến không gian thoải mái và sự sang trọng đích thực.'
-,'CONNECTING ROOM', 'https://ibb.co/TmxPQLC'),
+,'CONNECTING ROOM', 'https://i.ibb.co/Pwv12QS/1008.jpg'),
 (1004,2,25,200,'Phòng Deluxe Ocean View là một lựa chọn hoàn hảo cho những ai tìm kiếm 
 trải nghiệm xa hoa và tiện nghi cao cấp. 
 Với tầm nhìn trực tiếp ra biển cả xanh biếc, 
 phòng này mang đến không gian thoải mái và sự sang trọng đích thực.'
-,'SUITE ROOM', 'https://ibb.co/gJCTqjP'),
+,'SUITE ROOM', 'https://i.ibb.co/HqQzwFx/1007.jpg'),
 (2001,2,65,110,'Phòng suite room là một lựa chọn hoàn hảo cho những ai tìm kiếm 
 trải nghiệm xa hoa và tiện nghi cao cấp. 
 Với tầm nhìn trực tiếp ra biển cả xanh biếc, 
 phòng này mang đến không gian thoải mái và sự sang trọng đích thực.'
-,'FAMILY ROOM', 'https://ibb.co/tDbNV4P'),
+,'FAMILY ROOM', 'https://i.ibb.co/1T9pFLJ/1006.jpg'),
 (2002,1,65,100,'Phòng Deluxe Ocean View là một lựa chọn hoàn hảo cho những ai tìm kiếm 
 trải nghiệm xa hoa và tiện nghi cao cấp. 
 Với tầm nhìn trực tiếp ra biển cả xanh biếc, 
 phòng này mang đến không gian thoải mái và sự sang trọng đích thực.'
-,'deluxe room', 'https://ibb.co/fXrScLX'),
+,'deluxe room', 'https://i.ibb.co/TwPTCdw/hozing-room-9-2.jpg'),
 (2003,1,65,210,'Phòng suite room là một lựa chọn hoàn hảo cho những ai tìm kiếm 
 trải nghiệm xa hoa và tiện nghi cao cấp. 
 Với tầm nhìn trực tiếp ra biển cả xanh biếc, 
 phòng này mang đến không gian thoải mái và sự sang trọng đích thực.'
-,'DELUXE ROOM', 'https://ibb.co/f2sK4W5'),
+,'DELUXE ROOM', 'https://i.ibb.co/xDNcJb0/hozing-room-9-1.jpg'),
 (2004,3,65,200,'Phòng Deluxe Ocean View là một lựa chọn hoàn hảo cho những ai tìm kiếm 
 trải nghiệm xa hoa và tiện nghi cao cấp. 
 Với tầm nhìn trực tiếp ra biển cả xanh biếc, 
 phòng này mang đến không gian thoải mái và sự sang trọng đích thực.'
-,'deluxe room', 'https://ibb.co/6JNTvWJ'),
+,'deluxe room', 'https://i.ibb.co/QNkMLRk/2001.jpg'),
 (3001,5,200,300,'Phòng suite room là một lựa chọn hoàn hảo cho những ai tìm kiếm 
 trải nghiệm xa hoa và tiện nghi cao cấp. 
 Với tầm nhìn trực tiếp ra biển cả xanh biếc, 
 phòng này mang đến không gian thoải mái và sự sang trọng đích thực.'
-,'DELUXE ROOM', 'https://ibb.co/RptM9w4'),
+,'DELUXE ROOM', 'https://i.ibb.co/pvNsxFr/hozing-room-8.jpg'),
 (3002,3,65,110,'Phòng Deluxe Ocean View là một lựa chọn hoàn hảo cho những ai tìm kiếm 
 trải nghiệm xa hoa và tiện nghi cao cấp. 
 Với tầm nhìn trực tiếp ra biển cả xanh biếc, 
 phòng này mang đến không gian thoải mái và sự sang trọng đích thực.'
-,'deluxe room', 'https://ibb.co/prsGK2M'),
+,'deluxe room', 'https://i.ibb.co/h1nhds4/hozing-room-7.jpg'),
 (3003,3,65,300,'Phòng suite room là một lựa chọn hoàn hảo cho những ai tìm kiếm 
 trải nghiệm xa hoa và tiện nghi cao cấp. 
 Với tầm nhìn trực tiếp ra biển cả xanh biếc, 
 phòng này mang đến không gian thoải mái và sự sang trọng đích thực.'
-,'CONNECTING ROOM', 'https://ibb.co/5Y19LqP'),
+,'CONNECTING ROOM','https://i.ibb.co/PTrYgBd/hozing-room-6-2.jpg'),
 (3004,1,105,110,'Phòng Deluxe Ocean View là một lựa chọn hoàn hảo cho những ai tìm kiếm 
 trải nghiệm xa hoa và tiện nghi cao cấp. 
 Với tầm nhìn trực tiếp ra biển cả xanh biếc, 
 phòng này mang đến không gian thoải mái và sự sang trọng đích thực.'
-,'deluxe room', 'https://ibb.co/PY6JFpD'),
+,'deluxe room', 'https://i.ibb.co/1nmB7Vz/hozing-room-6.jpg'),
 (4001,3,35,200,'Phòng suite room là một lựa chọn hoàn hảo cho những ai tìm kiếm 
 trải nghiệm xa hoa và tiện nghi cao cấp. 
 Với tầm nhìn trực tiếp ra biển cả xanh biếc, 
 phòng này mang đến không gian thoải mái và sự sang trọng đích thực.'
-,'CONNECTING ROOM', 'https://ibb.co/m0h5yYC'),
+,'CONNECTING ROOM', 'https://i.ibb.co/9hyH4f9/hozing-room-5.jpg'),
 (4002,4,55,150,'Phòng Deluxe Ocean View là một lựa chọn hoàn hảo cho những ai tìm kiếm 
 trải nghiệm xa hoa và tiện nghi cao cấp. 
 Với tầm nhìn trực tiếp ra biển cả xanh biếc, 
 phòng này mang đến không gian thoải mái và sự sang trọng đích thực.'
-,'CONNECTING ROOM', 'https://ibb.co/VQw8CZj'),
+,'CONNECTING ROOM', 'https://i.ibb.co/nnPS1vg/hozing-image-10-1.jpg'),
 (4003,1,65,110,'Phòng suite room là một lựa chọn hoàn hảo cho những ai tìm kiếm 
 trải nghiệm xa hoa và tiện nghi cao cấp. 
 Với tầm nhìn trực tiếp ra biển cả xanh biếc, 
 phòng này mang đến không gian thoải mái và sự sang trọng đích thực.'
-,'SUPERIOR ROOM', 'https://ibb.co/cQL76Xx'),
+,'SUPERIOR ROOM', 'https://i.ibb.co/HqdktpX/hozing-image-10-2.jpg'),
 (4004,1,65,110,'Phòng Deluxe Ocean View là một lựa chọn hoàn hảo cho những ai tìm kiếm 
 trải nghiệm xa hoa và tiện nghi cao cấp. 
 Với tầm nhìn trực tiếp ra biển cả xanh biếc, 
 phòng này mang đến không gian thoải mái và sự sang trọng đích thực.'
-,'deluxe room', 'https://ibb.co/ts8mdys'),
+,'deluxe room', 'https://i.ibb.co/wWM0vDW/Suite-room-1-545x405.jpg'),
 (5001,3,55,200,'Phòng Deluxe Ocean View là một lựa chọn hoàn hảo cho những ai tìm kiếm 
 trải nghiệm xa hoa và tiện nghi cao cấp. 
 Với tầm nhìn trực tiếp ra biển cả xanh biếc, 
 phòng này mang đến không gian thoải mái và sự sang trọng đích thực.'
-,'CONNECTING ROOM', 'https://ibb.co/QKMqpNw'),
+,'CONNECTING ROOM', 'https://i.ibb.co/vjkrVPn/single-room1-545x405.jpg'),
 (5002,3,55,300,'Phòng suite room là một lựa chọn hoàn hảo cho những ai tìm kiếm 
 trải nghiệm xa hoa và tiện nghi cao cấp. 
 Với tầm nhìn trực tiếp ra biển cả xanh biếc, 
 phòng này mang đến không gian thoải mái và sự sang trọng đích thực.'
-,'suite room', 'https://ibb.co/Yp14SpK'),
+,'suite room', 'https://i.ibb.co/gzfb8zX/family-room-545x405.jpg'),
 (5003,4,115,100,'Phòng Deluxe Ocean View là một lựa chọn hoàn hảo cho những ai tìm kiếm 
 trải nghiệm xa hoa và tiện nghi cao cấp. 
 Với tầm nhìn trực tiếp ra biển cả xanh biếc, 
 phòng này mang đến không gian thoải mái và sự sang trọng đích thực.'
-,'SUPERIOR ROOM', 'https://ibb.co/KrCHCdW'),
+,'SUPERIOR ROOM', 'https://i.ibb.co/QKsGsLM/family-room-1-545x405.jpg'),
 (6001,3,65,110,'Phòng suite room là một lựa chọn hoàn hảo cho những ai tìm kiếm 
 trải nghiệm xa hoa và tiện nghi cao cấp. 
 Với tầm nhìn trực tiếp ra biển cả xanh biếc, 
 phòng này mang đến không gian thoải mái và sự sang trọng đích thực.'
-,'DOUBLE BED ROOM', 'https://ibb.co/SncBb8c'),
+,'DOUBLE BED ROOM', 'https://i.ibb.co/QNkMLRk/2001.jpg'),
 (6002,3,905,200,'Phòng Deluxe Ocean View là một lựa chọn hoàn hảo cho những ai tìm kiếm 
 trải nghiệm xa hoa và tiện nghi cao cấp. 
 Với tầm nhìn trực tiếp ra biển cả xanh biếc, 
 phòng này mang đến không gian thoải mái và sự sang trọng đích thực.'
-,'FAMILY ROOM', 'https://ibb.co/zrknWzS'),
+,'FAMILY ROOM', 'https://i.ibb.co/Qf5b746/1009.jpg'),
 (6003,3,25,270,'Phòng suite room là một lựa chọn hoàn hảo cho những ai tìm kiếm 
 trải nghiệm xa hoa và tiện nghi cao cấp. 
 Với tầm nhìn trực tiếp ra biển cả xanh biếc, 
 phòng này mang đến không gian thoải mái và sự sang trọng đích thực.'
-,'CONNECTING ROOM', 'https://ibb.co/TmxPQLC'),
+,'CONNECTING ROOM', 'https://i.ibb.co/Pwv12QS/1008.jpg'),
 (6004,5,25,200,'Phòng Deluxe Ocean View là một lựa chọn hoàn hảo cho những ai tìm kiếm 
 trải nghiệm xa hoa và tiện nghi cao cấp. 
 Với tầm nhìn trực tiếp ra biển cả xanh biếc, 
 phòng này mang đến không gian thoải mái và sự sang trọng đích thực.'
-,'SUITE ROOM', 'https://ibb.co/gJCTqjP'),
+,'SUITE ROOM', 'https://i.ibb.co/HqQzwFx/1007.jpg'),
 (7001,4,65,110,'Phòng suite room là một lựa chọn hoàn hảo cho những ai tìm kiếm 
 trải nghiệm xa hoa và tiện nghi cao cấp. 
 Với tầm nhìn trực tiếp ra biển cả xanh biếc, 
 phòng này mang đến không gian thoải mái và sự sang trọng đích thực.'
-,'FAMILY ROOM', 'https://ibb.co/tDbNV4P'),
+,'FAMILY ROOM', 'https://i.ibb.co/1T9pFLJ/1006.jpg'),
 (7002,3,65,100,'Phòng Deluxe Ocean View là một lựa chọn hoàn hảo cho những ai tìm kiếm 
 trải nghiệm xa hoa và tiện nghi cao cấp. 
 Với tầm nhìn trực tiếp ra biển cả xanh biếc, 
 phòng này mang đến không gian thoải mái và sự sang trọng đích thực.'
-,'deluxe room', 'https://ibb.co/fXrScLX'),
+,'deluxe room', 'https://i.ibb.co/TwPTCdw/hozing-room-9-2.jpg'),
 (7003,3,65,210,'Phòng suite room là một lựa chọn hoàn hảo cho những ai tìm kiếm 
 trải nghiệm xa hoa và tiện nghi cao cấp. 
 Với tầm nhìn trực tiếp ra biển cả xanh biếc, 
 phòng này mang đến không gian thoải mái và sự sang trọng đích thực.'
-,'DELUXE ROOM', 'https://ibb.co/f2sK4W5'),
+,'DELUXE ROOM', 'https://i.ibb.co/xDNcJb0/hozing-room-9-1.jpg'),
 (7004,2,65,200,'Phòng Deluxe Ocean View là một lựa chọn hoàn hảo cho những ai tìm kiếm 
 trải nghiệm xa hoa và tiện nghi cao cấp. 
 Với tầm nhìn trực tiếp ra biển cả xanh biếc, 
 phòng này mang đến không gian thoải mái và sự sang trọng đích thực.'
-,'deluxe room', 'https://ibb.co/6JNTvWJ'),
+,'deluxe room', 'https://i.ibb.co/QNkMLRk/2001.jpg'),
 (8001,1,200,300,'Phòng suite room là một lựa chọn hoàn hảo cho những ai tìm kiếm 
 trải nghiệm xa hoa và tiện nghi cao cấp. 
 Với tầm nhìn trực tiếp ra biển cả xanh biếc, 
 phòng này mang đến không gian thoải mái và sự sang trọng đích thực.'
-,'DELUXE ROOM', 'https://ibb.co/RptM9w4'),
+,'DELUXE ROOM', 'https://i.ibb.co/pvNsxFr/hozing-room-8.jpg'),
 (8002,2,65,110,'Phòng Deluxe Ocean View là một lựa chọn hoàn hảo cho những ai tìm kiếm 
 trải nghiệm xa hoa và tiện nghi cao cấp. 
 Với tầm nhìn trực tiếp ra biển cả xanh biếc, 
 phòng này mang đến không gian thoải mái và sự sang trọng đích thực.'
-,'deluxe room', 'https://ibb.co/prsGK2M'),
+,'deluxe room', 'https://i.ibb.co/h1nhds4/hozing-room-7.jpg'),
 (8003,3,65,300,'Phòng suite room là một lựa chọn hoàn hảo cho những ai tìm kiếm 
 trải nghiệm xa hoa và tiện nghi cao cấp. 
 Với tầm nhìn trực tiếp ra biển cả xanh biếc, 
 phòng này mang đến không gian thoải mái và sự sang trọng đích thực.'
-,'CONNECTING ROOM', 'https://ibb.co/5Y19LqP'),
+,'CONNECTING ROOM', 'https://i.ibb.co/PTrYgBd/hozing-room-6-2.jpg'),
 (8004,5,105,110,'Phòng Deluxe Ocean View là một lựa chọn hoàn hảo cho những ai tìm kiếm 
 trải nghiệm xa hoa và tiện nghi cao cấp. 
 Với tầm nhìn trực tiếp ra biển cả xanh biếc, 
 phòng này mang đến không gian thoải mái và sự sang trọng đích thực.'
-,'deluxe room', 'https://ibb.co/PY6JFpD'),
+,'deluxe room', 'https://i.ibb.co/1nmB7Vz/hozing-room-6.jpg'),
 (9001,5,35,200,'Phòng suite room là một lựa chọn hoàn hảo cho những ai tìm kiếm 
 trải nghiệm xa hoa và tiện nghi cao cấp. 
 Với tầm nhìn trực tiếp ra biển cả xanh biếc, 
 phòng này mang đến không gian thoải mái và sự sang trọng đích thực.'
-,'CONNECTING ROOM', 'https://ibb.co/m0h5yYC'),
+,'CONNECTING ROOM', 'https://i.ibb.co/9hyH4f9/hozing-room-5.jpg'),
 (9002,3,55,150,'Phòng Deluxe Ocean View là một lựa chọn hoàn hảo cho những ai tìm kiếm 
 trải nghiệm xa hoa và tiện nghi cao cấp. 
 Với tầm nhìn trực tiếp ra biển cả xanh biếc, 
 phòng này mang đến không gian thoải mái và sự sang trọng đích thực.'
-,'CONNECTING ROOM', 'https://ibb.co/VQw8CZj'),
+,'CONNECTING ROOM', 'https://i.ibb.co/nnPS1vg/hozing-image-10-1.jpg'),
 (9003,2,65,110,'Phòng suite room là một lựa chọn hoàn hảo cho những ai tìm kiếm 
 trải nghiệm xa hoa và tiện nghi cao cấp. 
 Với tầm nhìn trực tiếp ra biển cả xanh biếc, 
 phòng này mang đến không gian thoải mái và sự sang trọng đích thực.'
-,'SUPERIOR ROOM', 'https://ibb.co/cQL76Xx'),
+,'SUPERIOR ROOM', 'https://i.ibb.co/HqdktpX/hozing-image-10-2.jpg'),
 (9004,4,65,110,'Phòng Deluxe Ocean View là một lựa chọn hoàn hảo cho những ai tìm kiếm 
 trải nghiệm xa hoa và tiện nghi cao cấp. 
 Với tầm nhìn trực tiếp ra biển cả xanh biếc, 
 phòng này mang đến không gian thoải mái và sự sang trọng đích thực.'
-,'deluxe room', 'https://ibb.co/ts8mdys'),
+,'deluxe room', 'https://i.ibb.co/wWM0vDW/Suite-room-1-545x405.jpg'),
 (1101,2,55,200,'Phòng Deluxe Ocean View là một lựa chọn hoàn hảo cho những ai tìm kiếm 
 trải nghiệm xa hoa và tiện nghi cao cấp. 
 Với tầm nhìn trực tiếp ra biển cả xanh biếc, 
 phòng này mang đến không gian thoải mái và sự sang trọng đích thực.'
-,'CONNECTING ROOM', 'https://ibb.co/QKMqpNw'),
+,'CONNECTING ROOM', 'https://i.ibb.co/vjkrVPn/single-room1-545x405.jpg'),
 (1102,1,55,300,'Phòng suite room là một lựa chọn hoàn hảo cho những ai tìm kiếm 
 trải nghiệm xa hoa và tiện nghi cao cấp. 
 Với tầm nhìn trực tiếp ra biển cả xanh biếc, 
 phòng này mang đến không gian thoải mái và sự sang trọng đích thực.'
-,'suite room', 'https://ibb.co/Yp14SpK'),
+,'suite room', 'https://i.ibb.co/gzfb8zX/family-room-545x405.jpg'),
 (1103,2,115,100,'Phòng Deluxe Ocean View là một lựa chọn hoàn hảo cho những ai tìm kiếm 
 trải nghiệm xa hoa và tiện nghi cao cấp. 
 Với tầm nhìn trực tiếp ra biển cả xanh biếc, 
 phòng này mang đến không gian thoải mái và sự sang trọng đích thực.'
-,'SUPERIOR ROOM', 'https://ibb.co/KrCHCdW');
+,'SUPERIOR ROOM', 'https://i.ibb.co/QKsGsLM/family-room-1-545x405.jpg');
 
 drop table if exists book;
 CREATE TABLE book (
@@ -229,18 +229,20 @@ CREATE TABLE book (
 
 drop table if exists service_type;
 CREATE TABLE service_type (
-    id int(11) AUTO_INCREMENT PRIMARY KEY COMMENT 'id dich vu',
+    type_id int(11) AUTO_INCREMENT PRIMARY KEY COMMENT 'id dich vu',
     name varchar(100) COMMENT 'ten dich vu',
-    price decimal(10,2) COMMENT 'gia dich vu'
+    price decimal(10,0) COMMENT 'gia dich vu',
+    unit varchar(20) COMMENT 'don vi'
 );
 
-insert into service_type(name, price) values
-('Free-to-use smartphone',0),
-('Safe-deposit box',0),
-('Luggage storage',0),
-('Childcare',60),
-('Massage',15),
-('Airport shuttle ',20);
+insert into service_type(name, price, unit)
+values
+("Free-to-use smartphone",0, '$'),
+("Safe-deposit box",0 , '$'),
+("Luggage storage",0, '$'),
+("Childcare",600, '$'),
+("Massage",150, '$'),
+("Airport shuttle ",200, '$')
 
 drop table if exists feedback;
 CREATE TABLE feedback (
@@ -254,10 +256,10 @@ CREATE TABLE feedback (
 drop table if exists mapping_room_service;
 CREATE TABLE mapping_room_service (
     mapping_id int(11) AUTO_INCREMENT PRIMARY KEY COMMENT 'id dich vu',
-    service_id int(11) COMMENT 'ten khach hang',
+    service_id int(11) COMMENT 'ten service',
     room_code int(11) COMMENT 'ma phong'
 );
-insert into mapping_room_service (service_id, room_code)
+insert into mapping_room_service (room_code, service_id)
 values
 (1001,1),(1001,2),(1001,3),(1001,4),(1001,5),(1001,6),
 (1002,1),(1002,2),(1002,3),(1002,4),(1002,5),(1002,6),
